@@ -6,11 +6,10 @@ function Nav(props) {
   return (
     <div className="nav">
       <div className="nav-wrapper">
-        <h1 className="nav-start">
-          <a
-            className="nav-icon">🥗</a>
+        <div className="nav-start">
+          <img src="../rice.png" className="nav-icon"></img>
           <span className="nav-title">공기밥</span>
-        </h1>
+        </div>
 
         <div className="nav-end">
           <button className="nav-bookmark">🙂</button>
@@ -26,7 +25,6 @@ function Select(props) {
     <div className="select">
       <form className="select-form">
         <div className='nav-select-wrapper'>
-          {/* 여기 input말고 li로 바꿔서 선택할 수 있게 바꿔야함 */}
           <select aria-label="Default select example" className="select-1">
             <option selected>지역</option>
             <option value="1">강남구</option>
@@ -61,6 +59,7 @@ function Select(props) {
             <option value="1">양식</option>
             <option value="2">중식</option>
             <option value="3">한식</option>
+            <option value="4">일식</option>
           </select>
 
           <select aria-label="Default select example" className="select-3">
